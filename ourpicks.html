@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="ourpicks.css">
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <div class="container">
+       
+        <div id="result"></div>
+        <button id="b1" class="back-button" onclick="goBack()" >Back</button>
+    </div>
+    <script>
+		function goBack() {
+			if (document.referrer) {
+				window.location.href = document.referrer;
+			} else {
+				window.history.back();
+			}
+		}
+	</script>
+
+
+
+
+    </script>
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="/ourpic/1.jpg" target="_blank"><img src="/ourpic/1.jpg"></a>
+                <p>A Kolkata sightseeing tour is truly incomplete without visiting the ‘Harbour Bridge of India’, the Howrah Bridge. Titled as the ‘oldest but the busiest’ place in Kolkata, the Howrah Bridge was built over the Hooghly river to ensure connectivity between the two major cities of Kolkata and Howrah. </p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/2.jpg" alt="Image 2">
+                <p>Caption for Image 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/3.jpg" alt="Image 3">
+                <p>Caption for Image 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/4.jpg" alt="Image 4">
+                <p>Caption for Image 4</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/5.jpg" alt="Image 5">
+                <p>Caption for Image 5</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/6.jpg" alt="Image 6">
+                <p>Caption for Image 6</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/7.jpg" alt="Image 7">
+                <p>Caption for Image 7</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/8.jpg" alt="Image 8">
+                <p>Caption for Image 8</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/9.jpg" alt="Image 9">
+                <p>Caption for Image 9</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/10.jpg" alt="Image 10">
+                <p>So this is the place</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/11.jpg" alt="Image 11">
+                <p>Caption for Image 11</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/ourpic/12.jpg" alt="Image 12">
+                <p>Caption for Image 12</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>City Information</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">city<br>info<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#about"onclick="toggleMenu();">About</a></li>
+            <li><a href="#picks"onclick="toggleMenu();">Our picks</a></li>
+            <li><a href="#yours"onclick="toggleMenu();">Rising</a></li>
+            <li><a href="#newp"onclick="toggleMenu();">Your picks</a></li>
+            <li><a href="#aquery"onclick="toggleMenu();">Any query</a></li>
+        </ul>
+    </header>
+    <!--Title -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>City<br>
+                Information
+            </h2>
+<br>
+       
+            <div class="container">
+                <!--<h1>City Information</h1>-->
+                <form>
+                    <select id="state" onchange="selectState()">
+                        <option value="" disabled selected>Select State</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Bihar">Bihar</option>
+                    </select>
+                    <select id="city" onchange="selectCity()" disabled>
+                        <option value="" disabled selected>Select City</option>
+                    </select>
+                    <select id="category" disabled>
+                        <option value="" disabled selected>Select Category</option>
+                    </select>
+                    <button type="button" id="submit" onclick="fetchData()" disabled>Submit</button>
+                </form>
+            </div> </div>
+    </section>
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout us</h2>
+                <p style="font-weight: bold;">"CITY INFORMATION" is a comprehensive website that provides users with relevant information about schools, 
+                    hospitals, and restaurants in their city. 
+                    Designed as a college project, 
+                    this website aims to simplify the process of finding important locations 
+                    by providing detailed results based on the user's search criteria. <br>
+                    With a user-friendly interface and intuitive navigation, "CITY INFORMATION" is a 
+                    one-stop-shop for those seeking to explore their city's amenities. Whether you're looking <br>for a nearby school for your children, a reputable hospital for medical care, or a 
+                    great restaurant for a night out, "CITY INFORMATION" has got you covered<br>
+                    If you want to know more about us<a href="https://instagram.com/rahul_paswan34?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+                        style="color: red; font-style: oblique;">click here</a>
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="img/6222537.jpg" alt="not loaded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--lets start picks from here-->
+    <section class="picks" id="picks">
+        <div class="title">
+            <h2 class="titleText">our <span>P</span>icks</h2>
+            <p>These are some of our picks <!--<a href="clickpicks.html" style="color: crimson;">click here</a>--></p>
+        </div>
+       
+        <div class="content">
+            <div
+            class="imgback">
+        <img src="img/4025087.jpg" alt=""></div>
+            <div class="box">
+           
+                <div class="imgBx">
+                    <img src="img/Screenshot (183).png" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Calcutta Jain Temple, Badridas Temple Street</h3>
+                    <br>
+               <p>The temple celebrates Paryushan in Bhadrav month (between 16 August and 15 September) 
+                with great enthusiasm that attracts a large number of devotees. 
+                Photography is strictly prohibited inside the temple premises.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/imgjames.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Princep Ghat, Kolkata</h3><br>
+                    <p>One of the best places to get a quick break from this humdrum, is Prinsep Ghat. 
+                        Situated along the banks of the River Ganges, 
+                        this is a mini-vacation from home without the hassle of travelling too far</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/isckon.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>ISKCON Siliguri, Sri Sri Radha Madhavsundara
+                                        </h3>
+                                        <br><p>Legend has it that the place where this ISKON temple is built was the Baikunthapur Forest where 
+                                            Lord Krishna went into hiding. 
+                                            Therefore this place holds special place for pilgrims in the state.</p>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/thumb009.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Nehru Museum of Science and Technology</h3>
+                    <br>
+                <p>Nehru Museum of Science and Technology, a tribute to India's first Prime Minister, 
+                    is a marvel of innovation and learning. Its exhibits and interactive displays inspire 
+                    curiosity and celebrate the country's scientific achievements, 
+                    making it a must-visit destination for all who love science and technology</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/vm.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Victoria Memorial</h3><br>
+                <p>Amidst the tranquil gardens and serene lakes,
+                    Stands the majestic Victoria Memorial,
+                    A timeless symbol of grace and elegance,
+                    A tribute to an era of grandeur and splendor.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/Howrah_Bridge.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Howrah Bridge</h3><br>
+                    <p>Howrah Bridge, a marvel of steel,
+                        Stands tall with majestic appeal,
+                        A symbol of Kolkata's glory,
+                        A link that connects a million stories.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="title">
+            <a href="ourpicks.html " class="l1">view all</a>
+        </div>
+    </section>
+    <!--Now from here we will work on yours-->
+    <section class="yours" id="yours">
+        <div class="title">
+            <h2 class="titleText"><span>R</span>ising</h2>
+            <p>This pannel will show you what places are currently in the most demand</p>
+        </div>
+        <div class="content">
+           
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/digha1.jpg "alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Digha beach</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/wp-20191128-11-36-07.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Mandarmani Beach</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/science-city.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>science-city kolkata</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/waterpark.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Anand Amusement Park</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--now we will see your choesem places-->
+    <section class="newp" id="newp">
+        <div class="title">
+            <h2 class="titleText">your<span> P</span>icks</h2>
+            <p>These are some of new picks
+                <!--<a href="clickpicks.html" style="color: crimson;">click here</a>-->
+            </p>
+            </p>
+        </div>
+        <div class="content">
+            <div
+            class="imgback1">
+        <img src="img/5707839.jpg" alt=""></div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/market1-1544512713.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Hong Kong Market(Siliguri)</h3><br>
+                <p>Despite having multiple tourist attractions, Siliguri is primarily famous as a shopper's paradise. 
+                    For tourists, the inimitable Darjeeling tea is the most bought item in Siliguri, 
+                    closely followed by woollen garments.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/Screenshot (187).png" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Kolkata &#39; s Noctrune club </h3><br>
+            <p>Dazzling lights, thumping beats,
+                Pulsing energy that never sleeps.
+                A playground for the wild at heart,
+                Where dreams and reality never set apart.
+            welcome to Noctrune club</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/park1.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Millennium Park, Kolkata</h3><br>
+                    <p>Amidst the lush greenery, love blossoms in the romantic park,
+                        A serene escape, where souls intertwine and hearts spark.
+                        A place where whispers echo and laughter fills the air,
+                        The perfect spot for lovers to pause and stare.welcome to Millennium Park, Kolkata</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/graveyard.webp" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>South Park Street Cemetery</h3><br>
+                    <p> considered to be an important example of colonial-era architecture, with its Gothic-style 
+                        tombs and monuments, mixed with the rich flavor of the Greek,
+                         Egyptian, and Indo-Saracenic styles.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/digha.webp" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>digha</h3><br>
+                <p>Golden sand beneath our feet,
+                    the ocean's melody so sweet,
+                    hand in hand, hearts ablaze,
+                    our love like the sun's warm rays,
+                    romantic beach, forever our retreat.The beauty of this beautiful town of Bengal</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/hqdefault.jpg" alt="not found">
+                </div>
+                <div class="text">
+                    <h3>Durgapur Junction Mall</h3><br>
+                    <p>its a world of its own
+                        Where dreams and desires are sown
+                        A vibrant hub of people and things
+                        Where happiness and excitement sings</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="title">
+            <a href="yourpick.html " class="l1" >view all</a>
+        </div>
+    </section>
+    <!--contact-->
+    <section class="aquery" id="aquery">
+        <div class="title">
+            <h2 class="titleText"><span>Q</span>uery</h2>
+            <p>if you have any query related to our website contact us</p>
+        </div>
+        <div class="queryform">
+            <h3>send message</h3>
+            <form>
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="write"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="send" id="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+    const form = document.querySelector('.queryform form');
+    const nameInput = document.querySelector('.queryform input[type="text"][placeholder="name"]');
+    const emailInput = document.querySelector('.queryform input[type="email"]');
+    const messageInput = document.querySelector('.queryform textarea');
+    
+    form.addEventListener('submit', function(event) {
+      if (!isValidEmail(emailInput.value)) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please enter a valid email address.');
+      } else {
+       window.alert("Hey! thanks for contacting us");
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+      }
+    });
+    
+    function isValidEmail(email) {
+      // Use a regular expression to validate the email address
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    </script>
+    
+    <script type="text/javascript">
+        document.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+<script src="scriptcity.js"></script>
+<script src="res.js"></script>
+</body>
+
+</html>

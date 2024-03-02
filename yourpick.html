@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="yourpicks.css">
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+
+        <button class="b1" id="b1" onclick="goBack()">Go Back</button>
+        
+        <script>
+            function goBack() {
+                if (document.referrer) {
+                    window.location.href = document.referrer;
+                } else {
+                    window.history.back();
+                }
+            }
+        </script>
+
+
+
+    </script>
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="ourpic/1.jpg" target="_blank"><img src="ourpic/1.jpg"></a>
+                <p>Howrah Bridge</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/2.jpg" alt="Image 2">
+                <p>Victoria Memorial</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/3.jpg" alt="Image 3">
+                <p>Patliputra Stupa</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/4.jpg" alt="Image 4">
+                <p>Mahakal Temple</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/5.jpg" alt="Image 5">
+                <p>Sundarban Jungle</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/6.jpg" alt="Image 6">
+                <p>Chai & Sutta</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/7.jpg" alt="Image 7">
+                <p>Disco Rock</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/8.jpg" alt="Image 8">
+                <p>Bar</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/9.jpg" alt="Image 9">
+                <p>Water Park</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/10.jpg" alt="Image 10">
+                <p>Science City</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/11.jpg" alt="Image 11">
+                <p>Stadium</p>
+            </div>
+            <div class="gallery-item">
+                <img src="ourpic/12.jpg" alt="Image 12">
+                <p>Snow Park</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
